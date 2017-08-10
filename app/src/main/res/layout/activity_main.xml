@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context="teste.paulo.testepaulo.MainActivity">
 
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginLeft="300dp"
+        android:text="Sair"
+        android:textSize="8sp" />
+
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -76,14 +84,15 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Cadastrar" />
 
         <Button
-            android:id="@+id/button"
+            android:onClick="executaEntrar"
+            android:id="@+id/btnEntrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
