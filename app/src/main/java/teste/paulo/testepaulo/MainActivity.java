@@ -10,40 +10,15 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public interface Teste {
-        public abstract void seila();
-        public void test();
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Teste y = new Teste(){
-            @Override
-            public void seila() {
-
-            }
-
-            @Override
-            public void test() {
-
-            }
-        };
-        Teste z = new Teste(){
-            @Override
-            public void seila() {
-
-            }
-
-            @Override
-            public void test() {
-
-            }
-        };
         Button x = (Button) findViewById(R.id.btnCadastrar);
         x.setOnClickListener(new View.OnClickListener(){
-            public void onCLick (View view){
+            @Override
+            public void onClick(View view) {
                 Intent it = new Intent(MainActivity.this, TelaInicial.class);
                 startActivity(it);
             }
